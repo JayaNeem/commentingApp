@@ -1,0 +1,13 @@
+<table border="1">
+{{#if posts}}
+  {{#each posts}}
+    <tr>
+      <td>{{this.id}}</td>
+      <td>{{this.title}}</td>
+      <td><a href="/posts/detail/{{this.id}}" title="Post Detail">{{this.description}}</a></td>
+    </tr>
+  {{/each}}
+{{else}}
+  <tr><td colspan="3"> No Data </td></tr>
+{{/if}}
+</table>
